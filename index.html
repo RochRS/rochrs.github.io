@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rochan Ragghu — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+          Roch.
+        </a>
+
+        <button
+          class="nav__toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav__toggle-icon"></span>
+        </button>
+
+        <nav class="nav__menu" id="nav-menu">
+          <ul class="nav__links">
+            <li>
+              <a href="index.html" class="nav__link nav__link--active">Home</a>
+            </li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li><a href="#projects" class="nav__link">Work</a></li>
+          </ul>
+
+          <a href="#contact" class="nav__cta">
+            Contact
+            <iconify-icon
+              icon="lucide:arrow-up-right"
+              class="nav__cta-icon"
+              aria-hidden="true"
+            ></iconify-icon>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title" aria-label="Hi, I'm Roch@n">
+              <span class="hero__title-lottie-wrap" aria-hidden="true">
+                <dotlottie-wc
+                  class="hero__title-lottie"
+                  src="https://lottie.host/1bb7a547-8cad-463f-9660-eb16306a4447/R40Ht0BR6i.lottie"
+                  autoplay
+                  loop
+                ></dotlottie-wc>
+              </span>
+              <span class="hero__title-rest"
+                >I'm <span class="hero__name">Roch@n</span></span
+              >
+            </h1>
+            <p class="hero__tagline">I build things for the web.</p>
+            <p class="hero__description">
+              I'm a passionate full stack developer specializing in building
+              exceptional digital experiences with modern technologies.
+            </p>
+            <a href="files/cv.pdf" class="btn btn--outline" download>
+              Download CV
+              <iconify-icon
+                icon="lucide:download"
+                class="btn__icon"
+                aria-hidden="true"
+              ></iconify-icon>
+            </a>
+
+            <div class="hero__social">
+              <p class="hero__social-label">Connect with me</p>
+              <ul class="hero__social-list">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/"
+                    class="hero__social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <iconify-icon
+                      icon="mdi:linkedin"
+                      class="hero__social-icon"
+                      aria-hidden="true"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/"
+                    class="hero__social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                  >
+                    <iconify-icon
+                      icon="mdi:whatsapp"
+                      class="hero__social-icon"
+                      aria-hidden="true"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    class="hero__social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <iconify-icon
+                      icon="mdi:instagram"
+                      class="hero__social-icon"
+                      aria-hidden="true"
+                    ></iconify-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <dotlottie-wc
+              class="hero__lottie"
+              src="https://lottie.host/ede0bc82-18bf-4297-b07a-429edde7daf5/HC6dUdOfyQ.json"
+              autoplay
+              loop
+              aria-hidden="true"
+            ></dotlottie-wc>
+
+            <img
+              src="img/me-cutout.png"
+              alt="Rochan Ragghu"
+              class="hero__image"
+              width="480"
+              height="640"
+            />
+
+            <aside class="hero__code" aria-label="Developer profile snippet">
+              <div class="hero__code-header">
+                <span class="hero__code-title">
+                  <span class="hero__code-icon" aria-hidden="true"
+                    >&lt;/&gt;</span
+                  >
+                  Code
+                </span>
+                <span class="hero__code-status" aria-hidden="true"></span>
+              </div>
+              <pre
+                class="hero__code-body"
+              ><code><span class="code-kw">const</span> <span class="code-var">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-str">"Rochan Ragghu"</span>,
+  <span class="code-key">role</span>: <span class="code-str">"Full Stack Developer"</span>,
+  <span class="code-key">skills</span>: [<span class="code-str">"HTML"</span>, <span class="code-str">"CSS"</span>,
+    <span class="code-str">"JavaScript"</span>, <span class="code-str">"React"</span>],
+  <span class="code-key">passion</span>: <span class="code-str">"Building things for the web"</span>
+};</code></pre>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--about" id="about">
+        <div class="section__inner">
+          <p class="section__label">About</p>
+          <article class="about-card">
+            <div class="about-card__glow" aria-hidden="true"></div>
+            <h2 class="about-card__name">Rochan Ragghu</h2>
+            <p class="about-card__text">
+              I'm a full stack developer who likes turning ideas into clean,
+              usable products for the web. I care about thoughtful interfaces,
+              solid architecture, and shipping work that feels fast and
+              intentional. Outside of coursework, I build side projects to learn
+              by doing.
+            </p>
+            <ul class="about-card__facts">
+              <li>
+                <span>Currently</span>
+                Student · Full Stack Developer
+              </li>
+              <li>
+                <span>Focus</span>
+                Web apps, UI polish, modern JS
+              </li>
+              <li>
+                <span>Based in</span>
+                Your city / remote
+              </li>
+            </ul>
+            <a href="about.html" class="btn btn--outline about-card__cta">
+              More about me
+              <iconify-icon
+                icon="lucide:arrow-up-right"
+                class="btn__icon"
+                aria-hidden="true"
+              ></iconify-icon>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="experience">
+        <div class="section__inner">
+          <p class="section__label">Experience</p>
+          <div class="section__header">
+            <h2 class="section__title">Recent roles</h2>
+            <p class="section__lead">
+              A snapshot of where I've been learning and building lately.
+            </p>
+          </div>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__meta">
+                <span class="timeline__date">2025 — Present</span>
+                <span class="timeline__place">Campus / Remote</span>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__title">Full Stack Developer · Student</h3>
+                <p class="timeline__text">
+                  Building coursework and personal projects with HTML, CSS,
+                  JavaScript, and React — from layout and accessibility to APIs
+                  and state.
+                </p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__meta">
+                <span class="timeline__date">2024 — 2025</span>
+                <span class="timeline__place">Personal / Freelance</span>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__title">Web projects &amp; experiments</h3>
+                <p class="timeline__text">
+                  Small sites and prototypes for friends and practice —
+                  focusing on responsive design, performance, and clear UX.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section__inner">
+          <p class="section__label">Work</p>
+          <div class="section__header section__header--row">
+            <div>
+              <h2 class="section__title">Featured projects</h2>
+              <p class="section__lead">
+                A few things I've shipped or am proud of — replace these with
+                your real work.
+              </p>
+            </div>
+            <a href="work.html" class="section__link">
+              View all
+              <iconify-icon
+                icon="lucide:arrow-up-right"
+                aria-hidden="true"
+              ></iconify-icon>
+            </a>
+          </div>
+          <div class="projects">
+            <article class="project">
+              <p class="project__tag">01</p>
+              <h3 class="project__title">Portfolio website</h3>
+              <p class="project__text">
+                This site — a personal visiting card with a custom hero,
+                responsive layout, and a focus on polish.
+              </p>
+              <ul class="project__stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="index.html" class="project__link">
+                Live site
+                <iconify-icon
+                  icon="lucide:arrow-up-right"
+                  aria-hidden="true"
+                ></iconify-icon>
+              </a>
+            </article>
+            <article class="project">
+              <p class="project__tag">02</p>
+              <h3 class="project__title">Project placeholder</h3>
+              <p class="project__text">
+                Swap this card for an app, school project, or open-source
+                contribution you're proud of.
+              </p>
+              <ul class="project__stack">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+              </ul>
+              <a href="work.html" class="project__link">
+                Details
+                <iconify-icon
+                  icon="lucide:arrow-up-right"
+                  aria-hidden="true"
+                ></iconify-icon>
+              </a>
+            </article>
+            <article class="project">
+              <p class="project__tag">03</p>
+              <h3 class="project__title">Achievement placeholder</h3>
+              <p class="project__text">
+                Hackathon, competition finish, certification, or any notable
+                win — one sentence of context is enough.
+              </p>
+              <ul class="project__stack">
+                <li>Leadership</li>
+                <li>Design</li>
+                <li>Code</li>
+              </ul>
+              <a href="work.html" class="project__link">
+                Learn more
+                <iconify-icon
+                  icon="lucide:arrow-up-right"
+                  aria-hidden="true"
+                ></iconify-icon>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="skills">
+        <div class="section__inner">
+          <p class="section__label">Skills</p>
+          <div class="section__header">
+            <h2 class="section__title">What I work with</h2>
+            <p class="section__lead">
+              Tools I use day to day — still growing this list.
+            </p>
+          </div>
+          <div class="skills">
+            <div class="skills__group">
+              <h3 class="skills__heading">Frontend</h3>
+              <ul class="skills__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3 class="skills__heading">Backend &amp; data</h3>
+              <ul class="skills__list">
+                <li>Node.js</li>
+                <li>REST APIs</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3 class="skills__heading">Tools</h3>
+              <ul class="skills__list">
+                <li>Git</li>
+                <li>VS Code</li>
+                <li>Figma</li>
+                <li>npm</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta" id="contact">
+        <div class="section__inner contact">
+          <p class="section__label">Contact</p>
+          <h2 class="contact__title">Let's build something together</h2>
+          <p class="contact__text">
+            Open to internships, freelance, and collaboration. Say hello —
+            I'd love to hear what you're working on.
+          </p>
+          <div class="contact__actions">
+            <a href="mailto:hello@example.com" class="btn btn--solid">
+              Email me
+              <iconify-icon
+                icon="lucide:mail"
+                class="btn__icon"
+                aria-hidden="true"
+              ></iconify-icon>
+            </a>
+            <a href="files/cv.pdf" class="btn btn--outline" download>
+              Download CV
+              <iconify-icon
+                icon="lucide:download"
+                class="btn__icon"
+                aria-hidden="true"
+              ></iconify-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">
+          <span class="nav__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+          Roch.
+        </a>
+        <p class="footer__copy">
+          © <span id="footer-year">2026</span> Rochan Ragghu. Built with care.
+        </p>
+        <ul class="footer__links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
