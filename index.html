@@ -68,10 +68,6 @@
               >
             </h1>
             <p class="hero__tagline">I build things for the web.</p>
-            <p class="hero__description">
-              I'm a passionate full stack developer specializing in building
-              exceptional digital experiences with modern technologies.
-            </p>
             <a href="files/cv.pdf" class="btn btn--outline" download>
               Download CV
               <iconify-icon
@@ -160,15 +156,7 @@
                 </span>
                 <span class="hero__code-status" aria-hidden="true"></span>
               </div>
-              <pre
-                class="hero__code-body"
-              ><code><span class="code-kw">const</span> <span class="code-var">developer</span> = {
-  <span class="code-key">name</span>: <span class="code-str">"Rochan Ragghu"</span>,
-  <span class="code-key">role</span>: <span class="code-str">"Full Stack Developer"</span>,
-  <span class="code-key">skills</span>: [<span class="code-str">"HTML"</span>, <span class="code-str">"CSS"</span>,
-    <span class="code-str">"JavaScript"</span>, <span class="code-str">"React"</span>],
-  <span class="code-key">passion</span>: <span class="code-str">"Building things for the web"</span>
-};</code></pre>
+              <pre class="hero__code-body"><code id="hero-code"></code></pre>
             </aside>
           </div>
         </div>
@@ -176,39 +164,86 @@
 
       <section class="section section--about" id="about">
         <div class="section__inner">
-          <p class="section__label">About</p>
           <article class="about-card">
             <div class="about-card__glow" aria-hidden="true"></div>
-            <h2 class="about-card__name">About Me</h2>
-            <p class="about-card__text">
-              I'm a full stack developer who likes turning ideas into clean,
-              usable products for the web. I care about thoughtful interfaces,
-              solid architecture, and shipping work that feels fast and
-              intentional. Outside of coursework, I build side projects to learn
-              by doing.
-            </p>
-            <ul class="about-card__facts">
-              <li>
-                <span>Currently</span>
-                Student · Full Stack Developer
-              </li>
-              <li>
-                <span>Focus</span>
-                Web apps, UI polish, modern JS
-              </li>
-              <li>
-                <span>Based in</span>
-                Your city / remote
-              </li>
-            </ul>
-            <a href="about.html" class="btn btn--outline about-card__cta">
-              More about me
-              <iconify-icon
-                icon="lucide:arrow-up-right"
-                class="btn__icon"
-                aria-hidden="true"
-              ></iconify-icon>
-            </a>
+
+            <div class="about-card__top">
+              <div class="about-card__avatar-wrap">
+                <img
+                  src="img/me-avatar.png"
+                  alt="Rochan Ragghu"
+                  class="about-card__avatar"
+                  width="280"
+                  height="280"
+                />
+              </div>
+
+              <div class="about-card__intro">
+                <h2 class="about-card__name">About Me</h2>
+                <p class="about-card__text">
+                  I'm a full stack developer who likes turning ideas into clean,
+                  usable products for the web. I care about thoughtful
+                  interfaces, solid architecture, and shipping work that feels
+                  fast and intentional.
+                </p>
+                <a href="about.html" class="btn btn--outline about-card__cta">
+                  More about me
+                  <iconify-icon
+                    icon="lucide:arrow-up-right"
+                    class="btn__icon"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="about-card__process">
+              <h3 class="about-card__process-title">How I work</h3>
+              <ol class="about-card__steps">
+                <li class="about-card__step">
+                  <span class="about-card__step-num">01</span>
+                  <span class="about-card__step-icon" aria-hidden="true">
+                    <iconify-icon icon="line-md:search"></iconify-icon>
+                  </span>
+                  <div class="about-card__step-body">
+                    <h4>Plan</h4>
+                    <p>Clarify goals, users, and the shape of the build.</p>
+                  </div>
+                </li>
+                <li class="about-card__step">
+                  <span class="about-card__step-num">02</span>
+                  <span class="about-card__step-icon" aria-hidden="true">
+                    <iconify-icon icon="line-md:document-code"></iconify-icon>
+                  </span>
+                  <div class="about-card__step-body">
+                    <h4>Build</h4>
+                    <p>Write clean front-end and back-end that holds up.</p>
+                  </div>
+                </li>
+                <li class="about-card__step">
+                  <span class="about-card__step-num">03</span>
+                  <span class="about-card__step-icon" aria-hidden="true">
+                    <iconify-icon icon="line-md:paint-drop"></iconify-icon>
+                  </span>
+                  <div class="about-card__step-body">
+                    <h4>Polish</h4>
+                    <p>Tighten UI, fix edge cases, and keep it fast.</p>
+                  </div>
+                </li>
+                <li class="about-card__step">
+                  <span class="about-card__step-num">04</span>
+                  <span class="about-card__step-icon" aria-hidden="true">
+                    <iconify-icon
+                      icon="line-md:cloud-alt-upload-loop"
+                    ></iconify-icon>
+                  </span>
+                  <div class="about-card__step-body">
+                    <h4>Ship</h4>
+                    <p>Deploy, review, and improve with real feedback.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
           </article>
         </div>
       </section>
