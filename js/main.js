@@ -107,3 +107,41 @@ if (heroCode) {
     typeHeroCode(heroCode);
   }
 }
+
+const projectFilter = document.querySelector(".projects-filter");
+const projectCards = document.querySelectorAll(".project-card");
+const projectsEmpty = document.querySelector(".projects__empty");
+
+if (projectFilter && projectCards.length) {
+  const filterButtons = projectFilter.querySelectorAll("[data-filter]");
+
+  const applyProjectFilter = (filter) => {
+    let visible = 0;
+
+    projectCards.forEach((card) => {
+      const show = card.dataset.category === filter;
+      card.hidden = !show;
+      if (show) visible += 1;
+    });
+
+    if (projectsEmpty) {
+      projectsEmpty.hidden = visible > 0;
+    }
+  };
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+
+      filterButtons.forEach((btn) => {
+        const active = btn === button;
+        btn.classList.toggle("is-active", active);
+        btn.setAttribute("aria-pressed", String(active));
+      });
+
+      applyProjectFilter(filter);
+    });
+  });
+
+  applyProjectFilter("work");
+}
