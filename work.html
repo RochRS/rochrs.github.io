@@ -4,11 +4,239 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work — Rochan Ragghu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/work.css" />
   </head>
   <body>
-    <p>Work page coming soon.</p>
+    <header class="nav">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+          Roch.
+        </a>
+
+        <button
+          class="nav__toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav__toggle-icon"></span>
+        </button>
+
+        <nav class="nav__menu" id="nav-menu">
+          <ul class="nav__links">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li>
+              <a href="work.html" class="nav__link nav__link--active">Work</a>
+            </li>
+          </ul>
+
+          <a href="index.html#contact" class="nav__cta">
+            Contact
+            <iconify-icon
+              icon="lucide:arrow-up-right"
+              class="nav__cta-icon"
+              aria-hidden="true"
+            ></iconify-icon>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--projects work-page" id="projects">
+        <div class="section__inner">
+          <div
+            class="projects-filter"
+            role="group"
+            aria-label="Filter projects"
+          >
+            <button
+              type="button"
+              class="projects-filter__btn is-active"
+              data-filter="work"
+              aria-pressed="true"
+            >
+              <iconify-icon
+                icon="lucide:briefcase"
+                aria-hidden="true"
+              ></iconify-icon>
+              Work
+            </button>
+            <button
+              type="button"
+              class="projects-filter__btn"
+              data-filter="freelance"
+              aria-pressed="false"
+            >
+              <iconify-icon
+                icon="lucide:laptop"
+                aria-hidden="true"
+              ></iconify-icon>
+              Freelance
+            </button>
+          </div>
+          <div class="section__header projects__header">
+            <h1 class="section__title">All projects</h1>
+            <p class="section__lead work-page__lead">
+              Client work and freelance builds I've shipped or contributed to.
+            </p>
+          </div>
+          <div class="projects">
+            <a
+              href="#"
+              class="project-card"
+              data-category="work"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="project-card__media">
+                <img
+                  src="img/projects/welink-crm.avif"
+                  alt=""
+                  class="project-card__img"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                />
+                <span class="project-card__hover" aria-hidden="true">
+                  <iconify-icon
+                    icon="lucide:external-link"
+                    width="28"
+                    height="28"
+                  ></iconify-icon>
+                </span>
+                <img
+                  src="img/logos/tad-favicon.png"
+                  alt="tad."
+                  class="project-card__brand"
+                  width="40"
+                  height="40"
+                />
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__tag">CRM</span>
+                <h2 class="project-card__title">WeLink CRM</h2>
+                <p class="project-card__text">
+                  Mobile app for WeLink Real Estate agents in Suriname to manage
+                  listings, clients and deals.
+                </p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="project-card"
+              data-category="work"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="project-card__media">
+                <img
+                  src="img/projects/hj-express-webshop.avif"
+                  alt=""
+                  class="project-card__img"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                />
+                <span class="project-card__hover" aria-hidden="true">
+                  <iconify-icon
+                    icon="lucide:external-link"
+                    width="28"
+                    height="28"
+                  ></iconify-icon>
+                </span>
+                <img
+                  src="img/logos/tad-favicon.png"
+                  alt="tad."
+                  class="project-card__brand"
+                  width="40"
+                  height="40"
+                />
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__tag">Webshop</span>
+                <h2 class="project-card__title">HJ Express</h2>
+                <p class="project-card__text">
+                  Online store for HJ Express household goods, cleaning products
+                  and a free wholesale shipping.
+                </p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="project-card"
+              data-category="work"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="project-card__media">
+                <img
+                  src="img/projects/profitness-app.avif"
+                  alt=""
+                  class="project-card__img"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                />
+                <span class="project-card__hover" aria-hidden="true">
+                  <iconify-icon
+                    icon="lucide:external-link"
+                    width="28"
+                    height="28"
+                  ></iconify-icon>
+                </span>
+                <img
+                  src="img/logos/tad-favicon.png"
+                  alt="tad."
+                  class="project-card__brand"
+                  width="40"
+                  height="40"
+                />
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__tag">App</span>
+                <h2 class="project-card__title">ProFitness</h2>
+                <p class="project-card__text">
+                  Gym platform for Pro-Fitness N.V. memberships, classes and QR
+                  check-in.
+                </p>
+              </div>
+            </a>
+            <p class="projects__empty" hidden>
+              Freelance projects coming soon.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">
+          <span class="nav__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+          Roch.
+        </a>
+        <p class="footer__copy">
+          © <span id="footer-year">2026</span> Rochan Ragghu. Built with care.
+        </p>
+        <ul class="footer__links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
