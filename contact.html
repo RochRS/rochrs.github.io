@@ -49,42 +49,129 @@
       </div>
     </header>
 
-    <main>
-      <section class="section section--cta contact-page" id="contact">
-        <div class="section__inner">
-          <div class="contact">
-            <div class="contact__content">
-              <p class="section__label">Contact</p>
-              <h1 class="contact__title">Let's build something together</h1>
-              <p class="contact__text">
-                Open to internships, freelance, and collaboration. Say hello —
-                I'd love to hear what you're working on.
-              </p>
-              <div class="contact__actions">
-                <a href="mailto:hello@example.com" class="btn btn--solid">
-                  <iconify-icon
-                    icon="lucide:mail"
-                    class="btn__icon"
-                    aria-hidden="true"
-                  ></iconify-icon>
-                  Email me
-                </a>
-                <a href="files/cv.pdf" class="btn btn--outline" download>
-                  <iconify-icon
-                    icon="lucide:download"
-                    class="btn__icon"
-                    aria-hidden="true"
-                  ></iconify-icon>
-                  Download CV
-                </a>
-              </div>
-            </div>
-            <span class="contact__badge" aria-hidden="true">
-              <iconify-icon icon="lucide:mail"></iconify-icon>
-            </span>
+    <main class="contact-page">
+      <div class="section__inner contact-page__inner">
+        <header class="contact-page__header">
+          <h1 class="contact-page__title">Contact</h1>
+          <p class="contact-page__crumb">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">›</span>
+            <span>Contact</span>
+          </p>
+        </header>
+
+        <div class="contact-page__grid">
+          <div class="contact-page__intro">
+            <h2 class="contact-page__headline">
+              Let's start work together.<br />
+              Get in touch
+            </h2>
           </div>
+
+          <aside class="contact-details">
+            <p class="contact-details__lead">
+              Open to work, freelance and collaboration. Reach out anytime. I'd
+              love to hear what you want to build and how I can help.
+            </p>
+
+            <dl class="contact-details__grid">
+              <div class="contact-details__item">
+                <dt>
+                  <iconify-icon
+                    icon="lucide:user"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                  Name
+                </dt>
+                <dd>Rochan Ragghu</dd>
+              </div>
+              <div class="contact-details__item">
+                <dt>
+                  <iconify-icon
+                    icon="lucide:map-pin"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                  Address
+                </dt>
+                <dd>Paramaribo, Suriname</dd>
+              </div>
+              <div class="contact-details__item">
+                <dt>
+                  <iconify-icon
+                    icon="lucide:phone"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                  Phone
+                </dt>
+                <dd>
+                  <a
+                    href="https://wa.me/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >WhatsApp</a
+                  >
+                </dd>
+              </div>
+              <div class="contact-details__item">
+                <dt>
+                  <iconify-icon
+                    icon="lucide:share-2"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                  In socials
+                </dt>
+                <dd>
+                  <ul class="contact-details__socials">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                      >
+                        <iconify-icon
+                          icon="mdi:linkedin"
+                          aria-hidden="true"
+                        ></iconify-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wa.me/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp"
+                      >
+                        <iconify-icon
+                          icon="mdi:whatsapp"
+                          aria-hidden="true"
+                        ></iconify-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                      >
+                        <iconify-icon
+                          icon="mdi:instagram"
+                          aria-hidden="true"
+                        ></iconify-icon>
+                      </a>
+                    </li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </aside>
         </div>
-      </section>
+
+        <a href="mailto:ragghusrikant@gmail.com" class="contact-page__email">
+          ragghusrikant@gmail.com
+        </a>
+      </div>
     </main>
 
     <footer class="footer">
