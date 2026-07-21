@@ -1,0 +1,11 @@
+.contact-page {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - var(--nav-height) - 6rem);
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.contact-page .section__inner {
+  width: 100%;
+}

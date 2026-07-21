@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
     <header class="nav">
@@ -38,7 +39,7 @@
             <li><a href="work.html" class="nav__link">Work</a></li>
           </ul>
 
-          <a href="index.html#contact" class="nav__cta">
+          <a href="contact.html" class="nav__cta">
             Contact
             <iconify-icon
               icon="lucide:arrow-up-right"
@@ -64,6 +65,15 @@
 
       <section class="section">
         <div class="section__inner about-page">
+          <figure class="about-page__photo">
+            <img
+              src="img/me-tad.jpeg"
+              alt="Rochan Ragghu at a tad. event"
+              width="720"
+              height="900"
+              loading="lazy"
+            />
+          </figure>
           <div class="about-page__story">
             <h2 class="section__title">Who I am</h2>
             <p>
@@ -73,62 +83,123 @@
             </p>
             <p>
               I care about thoughtful UX, readable code, and work that feels
-              fast and polished. Outside of class, I build side projects to learn
-              by doing — usually with HTML, CSS, JavaScript, and React.
+              fast and polished. Outside of class, I build side projects to
+              learn by doing — usually with HTML, CSS, JavaScript, and React.
             </p>
             <p>
-              Right now I'm focused on growing as a developer through coursework,
-              personal builds, and opportunities to collaborate on real products.
+              Right now I'm focused on growing as a developer through
+              coursework, personal builds, and opportunities to collaborate on
+              real products.
             </p>
           </div>
+        </div>
+      </section>
 
-          <aside class="about__panel about-page__facts" aria-label="Quick facts">
-            <ul class="about__roles">
-              <li class="about__role">
-                <span class="about__role-label">Currently</span>
-                <span class="about__role-value"
-                  >Student · Full Stack Developer</span
-                >
-              </li>
-              <li class="about__role">
-                <span class="about__role-label">Focus</span>
-                <span class="about__role-value"
-                  >Web apps, UI polish, modern JS tooling</span
-                >
-              </li>
-              <li class="about__role">
-                <span class="about__role-label">Based in</span>
-                <span class="about__role-value">Your city / remote</span>
-              </li>
-            </ul>
-          </aside>
+      <section class="section section--alt" id="education">
+        <div class="section__inner">
+          <p class="section__label">Education</p>
+          <h2 class="section__title">My path so far</h2>
+          <ol class="education-timeline">
+            <li
+              class="education-timeline__item education-timeline__item--right education-timeline__item--current"
+            >
+              <div class="education-timeline__marker" aria-hidden="true"></div>
+              <div class="education-timeline__content">
+                <p class="education-timeline__meta">
+                  <span class="education-timeline__status">Present</span>
+                  Year 2
+                </p>
+                <h3 class="education-timeline__title">
+                  Bachelor · Software Engineering
+                </h3>
+                <p class="education-timeline__place">
+                  University of Applied Sciences and Technology Suriname
+                  (UNASAT)
+                </p>
+                <p class="education-timeline__text">
+                  Currently in my second year, building real products while I
+                  study.
+                </p>
+              </div>
+            </li>
+            <li class="education-timeline__item education-timeline__item--left">
+              <div class="education-timeline__marker" aria-hidden="true"></div>
+              <div class="education-timeline__content">
+                <p class="education-timeline__meta">Completed</p>
+                <h3 class="education-timeline__title">MBO · ICT</h3>
+                <p class="education-timeline__place">
+                  Natuur Technisch Instituut (NATIN-MBO)
+                </p>
+                <p class="education-timeline__text">
+                  Studied ICT before continuing into a Software Engineering
+                  bachelor.
+                </p>
+              </div>
+            </li>
+            <li class="education-timeline__item education-timeline__item--right">
+              <div class="education-timeline__marker" aria-hidden="true"></div>
+              <div class="education-timeline__content">
+                <p class="education-timeline__meta">Completed</p>
+                <h3 class="education-timeline__title">MULO-B</h3>
+                <p class="education-timeline__place">
+                  Wim Bos Verschuur School
+                </p>
+                <p class="education-timeline__text">
+                  Completed MULO-B before moving on to ICT at NATIN-MBO.
+                </p>
+              </div>
+            </li>
+            <li class="education-timeline__item education-timeline__item--left">
+              <div class="education-timeline__marker" aria-hidden="true"></div>
+              <div class="education-timeline__content">
+                <p class="education-timeline__meta">Completed</p>
+                <h3 class="education-timeline__title">
+                  GLO · Gewoon Lager Beroepsonderwijs
+                </h3>
+                <p class="education-timeline__place">
+                  O.S. Khargi Vishnudatt School
+                </p>
+                <p class="education-timeline__text">
+                  Completed GLO before continuing to MULO-B.
+                </p>
+              </div>
+            </li>
+          </ol>
         </div>
       </section>
 
       <section class="section section--cta" id="contact">
-        <div class="section__inner contact">
-          <p class="section__label">Contact</p>
-          <h2 class="contact__title">Want to work together?</h2>
-          <p class="contact__text">
-            Open to internships, freelance, and collaboration. Reach out anytime.
-          </p>
-          <div class="contact__actions">
-            <a href="mailto:hello@example.com" class="btn btn--solid">
-              Email me
-              <iconify-icon
-                icon="lucide:mail"
-                class="btn__icon"
-                aria-hidden="true"
-              ></iconify-icon>
-            </a>
-            <a href="index.html" class="btn btn--outline">
-              Back to home
-              <iconify-icon
-                icon="lucide:arrow-up-right"
-                class="btn__icon"
-                aria-hidden="true"
-              ></iconify-icon>
-            </a>
+        <div class="section__inner">
+          <div class="contact">
+            <div class="contact__content">
+              <p class="section__label">Contact</p>
+              <h2 class="contact__title">Want to work together?</h2>
+              <p class="contact__text">
+                Open to internships, freelance, and collaboration. Reach out
+                anytime.
+              </p>
+              <div class="contact__actions">
+                <a href="mailto:hello@example.com" class="btn btn--solid">
+                  <iconify-icon
+                    icon="lucide:mail"
+                    class="btn__icon"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                  Email me
+                </a>
+                <a href="index.html" class="btn btn--outline">
+                  Back to home
+                  <iconify-icon
+                    icon="lucide:arrow-up-right"
+                    class="btn__icon"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                </a>
+              </div>
+            </div>
+            <span class="contact__badge" aria-hidden="true">
+              <iconify-icon icon="lucide:mail"></iconify-icon>
+            </span>
           </div>
         </div>
       </section>
@@ -146,7 +217,7 @@
         <ul class="footer__links">
           <li><a href="about.html">About</a></li>
           <li><a href="work.html">Work</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </footer>

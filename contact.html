@@ -4,11 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact — Rochan Ragghu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
-    <p>Contact page coming soon.</p>
+    <header class="nav">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+          Roch.
+        </a>
+
+        <button
+          class="nav__toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav__toggle-icon"></span>
+        </button>
+
+        <nav class="nav__menu" id="nav-menu">
+          <ul class="nav__links">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li><a href="work.html" class="nav__link">Work</a></li>
+          </ul>
+
+          <a href="contact.html" class="nav__cta">
+            Contact
+            <iconify-icon
+              icon="lucide:arrow-up-right"
+              class="nav__cta-icon"
+              aria-hidden="true"
+            ></iconify-icon>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--cta contact-page" id="contact">
+        <div class="section__inner">
+          <div class="contact">
+            <div class="contact__content">
+              <p class="section__label">Contact</p>
+              <h1 class="contact__title">Let's build something together</h1>
+              <p class="contact__text">
+                Open to internships, freelance, and collaboration. Say hello —
+                I'd love to hear what you're working on.
+              </p>
+              <div class="contact__actions">
+                <a href="mailto:hello@example.com" class="btn btn--solid">
+                  <iconify-icon
+                    icon="lucide:mail"
+                    class="btn__icon"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                  Email me
+                </a>
+                <a href="files/cv.pdf" class="btn btn--outline" download>
+                  <iconify-icon
+                    icon="lucide:download"
+                    class="btn__icon"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                  Download CV
+                </a>
+              </div>
+            </div>
+            <span class="contact__badge" aria-hidden="true">
+              <iconify-icon icon="lucide:mail"></iconify-icon>
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">
+          <span class="nav__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+          Roch.
+        </a>
+        <p class="footer__copy">
+          © <span id="footer-year">2026</span> Rochan Ragghu. Built with care.
+        </p>
+        <ul class="footer__links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
