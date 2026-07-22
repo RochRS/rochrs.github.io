@@ -985,10 +985,14 @@ html {
 
 .about-card__text {
   max-width: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9rem;
   font-size: 1rem;
   line-height: 1.75;
   color: rgba(231, 229, 228, 0.82);
+}
+
+.about-card__text:last-of-type {
+  margin-bottom: 1.5rem;
 }
 
 .about-card__cta {
